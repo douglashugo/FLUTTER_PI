@@ -1,5 +1,6 @@
-import 'package:apresentacao_pi/features/categories/categories_page.dart';
-import 'package:apresentacao_pi/features/categories/contacts_page.dart';
+import 'package:apresentacao_pi/features/pages/home.dart';
+import 'package:apresentacao_pi/features/pages/contacts.dart';
+import 'package:apresentacao_pi/features/pages/perfil.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
 
   var pages = [
     const CategoriesPage(),
-    Container(color: Colors.orange),
+    const ProfileScreen(),
     const ContactForm(),
   ];
 

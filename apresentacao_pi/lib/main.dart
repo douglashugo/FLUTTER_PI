@@ -1,6 +1,4 @@
-import 'package:apresentacao_pi/core/constants/constants.dart';
 import 'package:flutter/material.dart';
-
 import 'features/home/presentation/home_page.dart';
 
 void main() {
@@ -14,8 +12,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorScheme: lightColorScheme),
-      darkTheme: ThemeData(colorScheme: darkColorScheme),
+      theme: ThemeData(colorScheme: ColorScheme.fromSwatch(
+        primarySwatch: Colors.orange
+      )),
+      //darkTheme: ThemeData(colorScheme: darkColorScheme),
       initialRoute: '/',
       routes: {
         '/': (context) => const HomePage(),
